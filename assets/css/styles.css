@@ -587,3 +587,121 @@ a {
     opacity: 1;
     height: 1.5px;
 }
+
+/* ==================== Service ==================== */
+.service {
+    margin-top: 185px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__desc {
+    margin-bottom: 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 71px;
+}
+
+.service__column {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.service-item {
+    padding: 30px 28px;
+    width: 294px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+
+.service-item__heading {
+    font-family: "Sora", sans-serif;
+    position: relative;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 2px;
+    border-radius: 1px;
+    display: inline-block;
+    background: linear-gradient(#ff5b2e, #ffa187);
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.service-item__link {
+    font-family: "Sora", sans-serif;
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396a;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 24px;
+}
+
+.service__media::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 350px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+
+.service__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.service__cta-wrap {
+    margin-top: 21px;
+    text-align: center;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
