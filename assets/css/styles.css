@@ -27,3 +27,78 @@ h5,
 h6 {
     font-family: "Sora", sans-serif;
 }
+
+/* ==================== Common ==================== */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 131px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgba(0, 9, 88, 0.7);
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000958;
+}
+
+.btn {
+    opacity: 0.9;
+}
+
+/* ==================== Header ==================== */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    display: inline-block;
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5e6085;
+    text-align: center;
+}
+
+.navbar__link:hover {
+    /* text-shadow: 1px 0 0 currentColor; */
+    font-weight: 600;
+    color: #000958;
+}
+
+.navbar__link::after {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.header-action__link {
+    --height: 50px;
+    min-width: 117px;
+}
